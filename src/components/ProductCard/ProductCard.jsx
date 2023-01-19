@@ -23,7 +23,9 @@ const ProductCard = ({ product }) => {
 
   const changeStyle = () => {
     setStyle((prevState) =>
-      prevState === styles.card ? styles.active : styles.card
+      prevState === styles.card
+        ? `${styles.card} ${styles.active}`
+        : styles.card
     );
     setSelectItem(!selectItem);
   };

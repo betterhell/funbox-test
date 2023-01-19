@@ -1,0 +1,12 @@
+@mixin fontProp($fsl, $fs, $fw, $lh) {
+  font-style: $fsl;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin displayProp($fd, $ai, $jc) {
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+}
